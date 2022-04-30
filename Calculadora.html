@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <img src="Imagenes/logo_nitrogeno.ico">
+    <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrogeno">
     <h1> Calculadora de Balance Nitrogenado </h1>
 </header>
 <nav>
@@ -23,19 +23,21 @@
 <div>
     <h3>Datos Ingreso:</h3>
     <p>
-        <input type="number" name="ProtConsumidas" placeholder="Proteinas Consumidas">
-        <select>
+        <label for="ProtConsumidas">Proteinas Consumidas</label> <input type="number" name="ProtConsumidas" placeholder="Proteinas Consumidas" id="ProtConsumidas">
+        <label for="UnidadPeso"></label>
+        <select id="UnidadPeso">
             <option value="Gramos">Gramos</option>
             <option value="Miligramos">Miligramos</option>
         </select>
     </p>
     <h3>Datos Egreso:</h3>
     <p>
-        <input type="number" name="Urea" placeholder="Urea">
+        <label for="Urea"></label> <input type="number" name="Urea" placeholder="Urea" id="Urea">
     </p>
     <p>
-        <input type="number" name="VolUrinario" placeholder="Volumen Urinario">
-        <select name="UnidadVol">
+        <label for="VolUrinario">Volumen Urinario</label> <input type="number" name="VolUrinario" placeholder="Volumen Urinario" id="VolUrinario">
+        <label for="UnidadVol"></label>
+        <select id="UnidadVol">
             <option value="Litros">Litros</option>
             <option value="Mililitros">Mililitros</option>
         </select>
@@ -45,19 +47,19 @@
     </p>
 </div>
 <div>
-    <h3>Balance Nitrogenado = <input type="number" name="BalanceNit"></h3>
+    <h3><label for="BalanceNit">Balance Nitrogenado = </label> <input type="number" name="BalanceNit" id="BalanceNit"></h3>
     <a href="Formulas.html"> Interpretacion de los resultados </a>
 </div>
 <div>
     <h3>Otros Valores Utiles:</h3>
     <p>
-        Nitrogeno Consumido: <input type="number" name="NConsumido">
+        <label for="NConsumido">Nitrogeno Consumido:</label> <input type="number" name="NConsumido" id="NConsumido">
     </p>
     <p>
-        Urea Urinaria: <input type="number" name="UreaUri">
+        <label for="UreaUri">Urea Urinaria:</label> <input type="number" name="UreaUri" id="UreaUri">
     </p>
     <p>
-        Nitrogeno Ureico Urinario: <input type="number" name="NUU">
+        <label for="NUU">Nitrogeno Ureico Urinario:</label> <input type="number" name="NUU" id="NUU">
     </p>
 </div>
 </body>
