@@ -10,8 +10,9 @@ No disponible todavia
 
 ##### Contenido:
 
-La pagina contiene primero una introduccion teorica sobre que es el balance nitrogenado; segundo, un listado con las
-formulas que se usan para calcularlo; y por ultimo, la calculadora propiamente dicha.
+La pagina contiene primero una introduccion teorica sobre que es el balance nitrogenado; segundo, un ejercicio de
+ejemplo con los pasos explicados de como resolverlo; tercero, un listado con las formulas que se usan para calcularlo; y
+por ultimo, la calculadora propiamente dicha.
 
 ##### Listado de Tecnologias Usadas:
 

@@ -1,3 +1,4 @@
+/* Tag */
 h1 {
     color: #1E049F;
 }
@@ -10,21 +11,56 @@ h3 {
     color: #8570EF;
 }
 
-h4 {
-    color: #584EF4;
-}
 img {
-    width: 80px;
+    width: 100px;
     float: right;
-    margin-right: 400px;
-    margin-top: -5px;
+    margin-right: 30%;
+    margin-top: -15px;
 }
+
 nav {
     border: 2px solid #1E049F;
 }
+
 a {
     margin: 1px 5%;
 }
+
 div {
     margin-bottom: 50px;
+}
+
+/* ID */
+#BalanceNit {
+    color: #048C02;
+}
+
+/* Clase */
+.TitulosRes {
+    color: #048C02;
+}
+
+.InfoCreadores {
+    font-style: italic;
+}
+
+.TituloPrincipal {
+    margin-left: 200px;
+}
+
+/* Pseudoclases */
+a:link {
+    color: #048C02;
+}
+
+a:visited {
+    color: #048C02;
+}
+
+a:hover {
+    color: #1204D7;
+}
+
+a:active {
+    font-weight: bold;
 }

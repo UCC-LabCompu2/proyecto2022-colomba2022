@@ -7,23 +7,26 @@
     <meta content="Web para calcular balance nitrogenado" name="description">
     <meta content="Introducción Teórica, Ejercicio de Ejemplo, Formulas, Calculadora" name="keywords">
     <link rel="stylesheet" href="Style.css" type="text/css">
+    <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <header>
     <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrogeno">
-    <h1> Calculadora de Balance Nitrogenado </h1>
+    <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
 </header>
 <nav>
-    <a href="index.html"> Introduccion Teorica </a>
-    <a href="Ejercicio.html"> Ejercicio de Ejemplo </a>
-    <a href="Formulas.html"> Formulas </a>
-    <a href="Calculadora.html"> Calculadora </a>
-    <a href="Creditos.html"> Creditos </a>
+    <a href="index.html">Introduccion Teorica</a>
+    <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
+    <a href="Formulas.html">Formulas</a>
+    <a href="Calculadora.html">Calculadora</a>
+    <a href="Creditos.html">Creditos</a>
 </nav>
 <div>
     <h3>Datos Ingreso:</h3>
     <p>
-        <label for="ProtConsumidas">Proteinas Consumidas</label> <input type="number" name="ProtConsumidas" placeholder="Proteinas Consumidas" id="ProtConsumidas">
+        <label for="ProtConsumidas">Proteinas Consumidas</label> <input type="number" name="ProtConsumidas"
+                                                                        placeholder="Proteinas Consumidas"
+                                                                        id="ProtConsumidas">
         <label for="UnidadPeso"></label>
         <select id="UnidadPeso">
             <option value="Gramos">Gramos</option>
@@ -32,10 +35,11 @@
     </p>
     <h3>Datos Egreso:</h3>
     <p>
-        <label for="Urea"></label> <input type="number" name="Urea" placeholder="Urea" id="Urea">
+        <label for="Urea">Urea</label> <input type="number" name="Urea" placeholder="Urea" id="Urea">
     </p>
     <p>
-        <label for="VolUrinario">Volumen Urinario</label> <input type="number" name="VolUrinario" placeholder="Volumen Urinario" id="VolUrinario">
+        <label for="VolUrinario">Volumen Urinario</label> <input type="number" name="VolUrinario"
+                                                                 placeholder="Volumen Urinario" id="VolUrinario">
         <label for="UnidadVol"></label>
         <select id="UnidadVol">
             <option value="Litros">Litros</option>
@@ -47,11 +51,12 @@
     </p>
 </div>
 <div>
-    <h3><label for="BalanceNit">Balance Nitrogenado = </label> <input type="number" name="BalanceNit" id="BalanceNit"></h3>
-    <a href="Formulas.html"> Interpretacion de los resultados </a>
+    <h3 class="TitulosRes"><label for="BalanceNit">Balance Nitrogenado = </label> <input type="number" name="BalanceNit"
+                                                                                         id="BalanceNit"></h3>
+    <a href="Formulas.html">Interpretacion de los resultados</a>
 </div>
 <div>
-    <h3>Otros Valores Utiles:</h3>
+    <h3 class="TitulosRes">Otros Valores Utiles:</h3>
     <p>
         <label for="NConsumido">Nitrogeno Consumido:</label> <input type="number" name="NConsumido" id="NConsumido">
     </p>
