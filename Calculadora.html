@@ -13,42 +13,43 @@
     <img src="Imagenes/logo_nitrogeno.ico">
     <h1> Calculadora de Balance Nitrogenado </h1>
 </header>
-<nav></nav>
+<nav>
+    <a href="index.html"> Introduccion Teorica </a>
+    <a href="Ejercicio.html"> Ejercicio de Ejemplo </a>
+    <a href="Formulas.html"> Formulas </a>
+    <a href="Calculadora.html"> Calculadora </a>
+    <a href="Creditos.html"> Creditos </a>
+</nav>
 <div>
+    <h3>Datos Ingreso:</h3>
     <p>
-        Datos Ingreso:
-    </p>
-    <p>
-        Proteinas Consumidas:
-        <input type="number" name="ProtConsumidas">
+        <input type="number" name="ProtConsumidas" placeholder="Proteinas Consumidas">
         <select>
             <option value="Gramos">Gramos</option>
             <option value="Miligramos">Miligramos</option>
         </select>
     </p>
+    <h3>Datos Egreso:</h3>
     <p>
-        Datos Egreso:
+        <input type="number" name="Urea" placeholder="Urea">
     </p>
     <p>
-        Urea:
-        <input type="number" name="Urea">
-    </p>
-    <p>
-        Volumen Urinario:
-        <input type="number" name="VolUrinario">
+        <input type="number" name="VolUrinario" placeholder="Volumen Urinario">
         <select name="UnidadVol">
             <option value="Litros">Litros</option>
             <option value="Mililitros">Mililitros</option>
         </select>
     </p>
-</div>
-<div>
-    <!-- Aca tengo que poner que redirija a la pagina de formulas -->
-</div>
-<div>
     <p>
-        Otros Valores Utiles:
+        <button type="button" name="Calcular">Calcular</button>
     </p>
+</div>
+<div>
+    <h3>Balance Nitrogenado = <input type="number" name="BalanceNit"> </h3>
+    <a href="Formulas.html"> Interpretacion de los resultados </a>
+</div>
+<div>
+    <h3>Otros Valores Utiles:</h3>
     <p>
         Nitrogeno Consumido: <input type="number" name="NConsumido">
     </p>
