@@ -13,3 +13,18 @@ h3 {
 h4 {
     color: #584EF4;
 }
+img {
+    width: 80px;
+    float: right;
+    margin-right: 400px;
+    margin-top: -5px;
+}
+nav {
+    border: 2px solid #1E049F;
+}
+a {
+    margin: 1px 5%;
+}
+div {
+    margin-bottom: 50px;
+}
