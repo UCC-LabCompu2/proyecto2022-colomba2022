@@ -10,28 +10,32 @@
     <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<header>
-    <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrógeno">
-    <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
-</header>
-<nav>
-    <a href="index.html">Introducción Teórica</a>
-    <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
-    <a href="Formulas.html">Fórmulas</a>
-    <a href="Calculadora.html">Calculadora</a>
-    <a href="Creditos.html">Créditos</a>
-</nav>
-<section>
+<div class="HeaderDiv">
+    <header>
+        <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrógeno">
+        <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
+    </header>
+</div>
+<div class="NavDiv">
+    <nav>
+        <a href="index.html">Introducción Teórica</a>
+        <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
+        <a href="Formulas.html">Fórmulas</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Creditos.html">Créditos</a>
+    </nav>
+</div>
+<div class="EjercicioDiv">
     <h2>Ejercicio de Ejemplo:</h2>
-    <div>
+    <section>
         <h3>Datos:</h3>
         <ul>
             <li>Proteínas Consumidas = 105 Gr</li>
             <li>Urea = 10 mG/dL</li>
             <li>Volumen Urinario = 2 L</li>
         </ul>
-    </div>
-    <div>
+    </section>
+    <section>
         <h3>Solución:</h3>
         <ol>
             <li>
@@ -58,7 +62,7 @@
             </li>
             <li>
                 <p>
-                    Después de calcular la Urea Urinaria, calculamos el Nitrógeno Uréico Urinario (NUU).
+                    Después de calcular la Urea Urinaria, calculamos el Nitrógeno Ureico Urinario (NUU).
                 </p>
                 <p>
                     NUU = 0.2 G * 0.467
@@ -92,9 +96,9 @@
         </ol>
         <p>
             En el caso de este ejemplo podemos ver que el balance da <b>POSITIVO</b>, lo que podría significar que el
-            paciente se encuentra en una etapa <b>ANABÓLICA</b> y/o que consume mas proteínas de las que necesita.
+            paciente se encuentra en una etapa <b>ANABÓLICA</b> y/o que consume más proteínas de las que necesita.
         </p>
-    </div>
-</section>
+    </section>
+</div>
 </body>
 </html>

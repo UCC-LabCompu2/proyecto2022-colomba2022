@@ -10,78 +10,92 @@
     <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<header>
-    <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrógeno">
-    <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
-</header>
-<nav>
-    <a href="index.html">Introducción Teórica</a>
-    <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
-    <a href="Formulas.html">Fórmulas</a>
-    <a href="Calculadora.html">Calculadora</a>
-    <a href="Creditos.html">Créditos</a>
-</nav>
-<div>
-    <h2>Fórmula de Balance Nitrogenado:</h2>
-    <p>
-        <b>Ingreso - Egreso = Balance Nitrogenado</b>
-    </p>
+<div class="HeaderDiv">
+    <header>
+        <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrógeno">
+        <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
+    </header>
 </div>
-<div>
-    <h3>Fórmulas de Ingreso:</h3>
-    <p>
-        <b>Ingreso = Proteínas consumidas / 6.25</b>
-    </p>
-    <article>
+<div class="NavDiv">
+    <nav>
+        <a href="index.html">Introducción Teórica</a>
+        <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
+        <a href="Formulas.html">Fórmulas</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Creditos.html">Créditos</a>
+    </nav>
+</div>
+<div class="FormulasDiv">
+    <section>
+        <h2>Fórmula de Balance Nitrogenado:</h2>
+        <p>
+            <b>Ingreso - Egreso = Balance Nitrogenado</b>
+        </p>
+    </section>
+    <section>
+        <h3>Fórmulas de Ingreso:</h3>
+        <p>
+            <b>Ingreso = Proteínas consumidas / 6.25</b>
+        </p>
+        <article>
+            <ul>
+                <li>Proteínas consumidas: es la cantidad de proteínas que el individuo come durante el período de UN
+                    día.
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h3>Fórmulas de Egreso:</h3>
+        <p>
+            <b>Urea Urinaria = Urea x Volumen Urinario</b>
+        </p>
+        <p>
+            <b>Nitrógeno Ureico Urinario = Urea Urinaria x 0.467</b>
+        </p>
+        <p>
+            <b>Egreso = Nitrógeno Ureico Urinario + Pérdidas Ordinarias (4gr)</b>
+        </p>
+        <article>
+            <ul>
+                <li>Urea: metabolíto proveniente del uso de las proteínas en el organismo.</li>
+                <li>Urea Urinaria: es la cantidad de urea presente en la orina.</li>
+                <li>Nitrógeno Ureico Urinario: es la cantidad de nitrógeno originario de la urea presente en la orina.
+                </li>
+                <li>Volumen Urinario: es la cantidad de orina excretada en UN día. Este dato tiene una fórmula para ser
+                    calculado, pero lo normal (en el ámbito en el que es usada esta fórmula) es que sea ya un dato
+                    calculado
+                    en vez de un dato a calcular.
+                </li>
+                <li>Pérdidas Ordinarias: es la cantidad de nitrógeno eliminado por transpiración, heces y respiración.
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h3>Posibles Resultados:</h3>
         <ul>
-            <li>Proteínas consumidas: es la cantidad de proteínas que el individuo come durante el período de UN día.
+            <li>Neutro (=0): estado de equilibrio. La cantidad de proteínas ingeridas es la misma que la cantidad de
+                proteínas expulsadas.
+            </li>
+            <li>Positivo (>0): estado de anabolismo. La cantidad de proteínas ingeridas supera a la cantidad de
+                proteínas
+                expulsadas. Es característico de pacientes sin estrés metabólico y de etapas de crecimiento activo
+                (síntesis
+                de tejidos), por ejemplo, embarazo, lactancia, infancia o paciente post-cirugía menor.
+            </li>
+            <li>Negativo (<0): estado de catabolismo. La cantidad de proteínas expulsadas supera a la cantidad de
+                proteínas
+                ingeridas. Es característico de pacientes con estrés metabólico, por ejemplo, fiebre, cirugía mayor,
+                politraumatismo, quemaduras, ayuno, desnutrición y otras patologías.
             </li>
         </ul>
-    </article>
-</div>
-<div>
-    <h3>Fórmulas de Egreso:</h3>
-    <p>
-        <b>Urea Urinaria = Urea x Volumen Urinario</b>
-    </p>
-    <p>
-        <b>Nitrógeno Uréico Urinario = Urea Urinaria x 0.467</b>
-    </p>
-    <p>
-        <b>Egreso = Nitrógeno Uréico Urinario + Pérdidas Ordinarias (4gr)</b>
-    </p>
-    <article>
-        <ul>
-            <li>Urea: metabolíto proveniente del uso de las proteínas en el organismo.</li>
-            <li>Urea Urinaria: es la cantidad de urea presente en la orina.</li>
-            <li>Nitrógeno Uréico Urinario: es la cantidad de nitrógeno originario de la urea presente en la orina.</li>
-            <li>Volumen Urinario: es la cantidad de orina excretada en UN día. Este dato tiene una fórmula para ser
-                calculado, pero lo normal (en el ámbito en el que es usada esta fórmula) es que sea ya un dato calculado
-                en vez de un dato a calcular.
-            </li>
-            <li>Pérdidas Ordinarias: es la cantidad de nitrógeno eliminado por transpiración, heces y respiración.</li>
-        </ul>
-    </article>
-</div>
-<div>
-    <h3>Posibles Resultados:</h3>
-    <ul>
-        <li>Neutro (=0): estado de equilibrio. La cantidad de proteínas ingeridas es la misma que la cantidad de
-            proteínas expulsadas.
-        </li>
-        <li>Positivo (>0): estado de anabolismo. La cantidad de proteínas ingeridas supera a la cantidad de proteínas
-            expulsadas. Es característico de pacientes sin estrés metabólico y de etapas de crecimiento activo (síntesis
-            de tejidos), por ejemplo, embarazo, lactancia, infancia o paciente post-cirugía menor.
-        </li>
-        <li>Negativo (<0): estado de catabolismo. La cantidad de proteínas expulsadas supera a la cantidad de proteínas
-            ingeridas. Es característico de pacientes con estrés metabólico, por ejemplo, fiebre, cirugía mayor,
-            politraumatismo, quemaduras, ayuno, desnutrición y otras patologías.
-        </li>
-    </ul>
-    <p>
-        En la teoría se recomienda mantener en neutro o positivo. En la práctica, en pacientes estresados, se intenta
-        que el negativo sea lo más cercano posible al 0
-    </p>
+        <p>
+            En la teoría se recomienda mantener en neutro o positivo. En la práctica, en pacientes estresados, se
+            intenta
+            que el negativo sea lo más cercano posible al 0
+        </p>
+    </section>
 </div>
 </body>
 </html>

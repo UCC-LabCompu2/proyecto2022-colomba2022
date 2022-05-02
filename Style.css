@@ -26,7 +26,7 @@ a {
     margin: 1px 5%;
 }
 
-div {
+section {
     margin-bottom: 50px;
 }
 
@@ -50,6 +50,14 @@ div {
 
 .Nombres {
     font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.HeaderDiv {
+    background-color: #F8F479;
+}
+
+.NavDiv {
+    background-color: #F8F479;
 }
 
 /* Pseudoclases */
