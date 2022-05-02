@@ -6,7 +6,7 @@
 
 ##### Link de GH-Pages:
 
-No disponible todavia
+No disponible todavía
 
 ##### Contenido:
 
@@ -21,5 +21,5 @@ por último, la calculadora propiamente dicha.
 
 ##### Créditos:
 
-Quiero agradecer a la Licenciada Sofía Belén Colomba (M.P 4682) que colaboró con el marco teórico, la imagen que se uso
+Quiero agradecer a la Licenciada Sofía Belén Colomba (M.P 4682) que colaboró con el marco teórico, la imagen que se usó
 en el canvas, las fórmulas y por su tiempo.
