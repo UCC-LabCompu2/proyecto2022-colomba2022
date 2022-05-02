@@ -48,6 +48,10 @@ div {
     margin-left: 200px;
 }
 
+.Nombres {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 /* Pseudoclases */
 a:link {
     color: #048C02;
