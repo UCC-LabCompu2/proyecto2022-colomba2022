@@ -18,8 +18,13 @@ img {
     margin-top: -15px;
 }
 
+header {
+    background-color: #F8F479;
+}
+
 nav {
     border: 2px solid #1E049F;
+    background-color: #F8F479;
 }
 
 a {
@@ -27,6 +32,10 @@ a {
 }
 
 section {
+    margin-bottom: 50px;
+}
+
+div {
     margin-bottom: 50px;
 }
 
@@ -50,14 +59,6 @@ section {
 
 .Nombres {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-.HeaderDiv {
-    background-color: #F8F479;
-}
-
-.NavDiv {
-    background-color: #F8F479;
 }
 
 /* Pseudoclases */

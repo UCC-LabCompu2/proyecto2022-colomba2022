@@ -10,13 +10,10 @@
     <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div class="HeaderDiv">
     <header>
         <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrógeno">
         <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
     </header>
-</div>
-<div class="NavDiv">
     <nav>
         <a href="index.html">Introducción Teórica</a>
         <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
@@ -24,9 +21,8 @@
         <a href="Calculadora.html">Calculadora</a>
         <a href="Creditos.html">Créditos</a>
     </nav>
-</div>
-<div class="CalculadoraDiv">
-    <section>
+<section>
+    <div>
         <h3>Datos Ingreso:</h3>
         <p>
             <label for="ProtConsumidas">Proteínas Consumidas</label> <input type="number" name="ProtConsumidas"
@@ -59,14 +55,14 @@
         <p>
             <button type="button" name="Calcular">Calcular</button>
         </p>
-    </section>
-    <section>
+    </div>
+    <div>
         <h3 class="TitulosRes"><label for="BalanceNit">Balance Nitrogenado = </label> <input type="number"
                                                                                              name="BalanceNit"
                                                                                              id="BalanceNit"></h3>
         <a href="Formulas.html">Interpretación de los resultados</a>
-    </section>
-    <section>
+    </div>
+    <div>
         <h3 class="TitulosRes">Otros Valores Útiles:</h3>
         <p>
             <label for="NConsumido">Nitrógeno Consumido:</label> <input type="number" name="NConsumido" id="NConsumido">
@@ -77,7 +73,7 @@
         <p>
             <label for="NUU">Nitrógeno Ureico Urinario:</label> <input type="number" name="NUU" id="NUU">
         </p>
-    </section>
-</div>
+    </div>
+</section>
 </body>
 </html>
