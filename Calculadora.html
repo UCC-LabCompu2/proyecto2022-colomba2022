@@ -8,19 +8,20 @@
     <meta content="Introducción Teórica, Ejercicio de Ejemplo, Fórmulas, Calculadora" name="keywords">
     <link rel="stylesheet" href="Style.css" type="text/css">
     <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="Functions.js"></script>
 </head>
 <body>
-    <header>
-        <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrógeno">
-        <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
-    </header>
-    <nav>
-        <a href="index.html">Introducción Teórica</a>
-        <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
-        <a href="Formulas.html">Fórmulas</a>
-        <a href="Calculadora.html">Calculadora</a>
-        <a href="Creditos.html">Créditos</a>
-    </nav>
+<header>
+    <img src="Imagenes/logo_nitrogeno.ico" alt="Logo del Nitrógeno">
+    <h1 class="TituloPrincipal"> Calculadora de Balance Nitrogenado </h1>
+</header>
+<nav>
+    <a href="index.html">Introducción Teórica</a>
+    <a href="Ejercicio.html">Ejercicio de Ejemplo</a>
+    <a href="Formulas.html">Fórmulas</a>
+    <a href="Calculadora.html">Calculadora</a>
+    <a href="Creditos.html">Créditos</a>
+</nav>
 <section>
     <div>
         <h3>Datos Ingreso:</h3>
@@ -29,7 +30,7 @@
                                                                             placeholder="Proteínas Consumidas"
                                                                             id="ProtConsumidas">
             <label for="UnidadPeso"></label>
-            <select id="UnidadPeso">
+            <select id="UnidadPeso" onchange="CambiarUnidades(this.value)">
                 <option value="Gramos">Gramos</option>
                 <option value="Miligramos">Miligramos</option>
             </select>
@@ -38,7 +39,7 @@
         <p>
             <label for="Urea">Urea</label> <input type="number" name="Urea" placeholder="Urea" id="Urea">
             <label for="UnidadUrea"></label>
-            <select id="UnidadUrea">
+            <select id="UnidadUrea" onchange="CambiarUnidades(this.value)">
                 <option value="Gramos/Litros">Gramos/Litros</option>
                 <option value="Miligramos/Decilitros">Miligramos/Decilitros</option>
             </select>
@@ -47,31 +48,42 @@
             <label for="VolUrinario">Volumen Urinario</label> <input type="number" name="VolUrinario"
                                                                      placeholder="Volumen Urinario" id="VolUrinario">
             <label for="UnidadVol"></label>
-            <select id="UnidadVol">
+            <select id="UnidadVol" onchange="CambiarUnidades(this.value)">
                 <option value="Litros">Litros</option>
                 <option value="Decilitros">Decilitros</option>
             </select>
         </p>
         <p>
-            <button type="button" name="Calcular">Calcular</button>
+            <button type="button" name="Calcular" onclick="Calcular()">Calcular</button>
         </p>
     </div>
     <div>
-        <h3 class="TitulosRes"><label for="BalanceNit">Balance Nitrogenado = </label> <input type="number"
+        <h3 class="TitulosRes"><label for="BalanceNit">Balance Nitrogenado = </label> <input type="text"
                                                                                              name="BalanceNit"
-                                                                                             id="BalanceNit"></h3>
+                                                                                             id="BalanceNit" disabled></h3>
         <a href="Formulas.html">Interpretación de los resultados</a>
     </div>
     <div>
         <h3 class="TitulosRes">Otros Valores Útiles:</h3>
         <p>
-            <label for="NConsumido">Nitrógeno Consumido:</label> <input type="number" name="NConsumido" id="NConsumido">
+            <label for="NConsumido">Nitrógeno Consumido:</label> <input type="text" name="NConsumido" id="NConsumido" disabled>
         </p>
         <p>
-            <label for="UreaUri">Urea Urinaria:</label> <input type="number" name="UreaUri" id="UreaUri">
+            <label for="UreaUri">Urea Urinaria:</label> <input type="text" name="UreaUri" id="UreaUri" disabled>
         </p>
         <p>
-            <label for="NUU">Nitrógeno Ureico Urinario:</label> <input type="number" name="NUU" id="NUU">
+            <label for="NUU">Nitrógeno Ureico Urinario:</label> <input type="text" name="NUU" id="NUU" disabled>
+        </p>
+    </div>
+    <div>
+        <canvas id="canvas" width="600px" height="520px">
+            El navegador no soporta Canvas
+        </canvas>
+        <p>
+            <label>---Nitrogeno----------Nitrogeno--</label>
+        </p>
+        <p>
+            <label>--Consumido----------Expulsado--</label>
         </p>
     </div>
 </section>

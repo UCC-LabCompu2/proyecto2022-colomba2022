@@ -18,6 +18,7 @@ por último, la calculadora propiamente dicha.
 
 * HTML5
 * CSS3
+* JavaScript
 
 ##### Créditos:
 

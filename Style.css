@@ -44,6 +44,10 @@ div {
     color: #048C02;
 }
 
+#canvas {
+    background: #F8F479;
+}
+
 /* Clase */
 .TitulosRes {
     color: #048C02;
