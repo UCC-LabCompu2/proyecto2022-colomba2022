@@ -190,7 +190,7 @@ function Canvas(Ingr, Egr) {
 }
 
 /**
- * Comprueba que los valores de los input de Proteinas Consumidas, Urea y Volumen Urinario no sean negativos (esto seria ilogico y causaria errores). Si son negativos alerta al usuario y blanquea los input
+ * Comprueba que los valores de los input de Proteinas Consumidas, Urea y Volumen Urinario no sean negativos o nulos (esto seria ilogico y causaria errores). Si son negativos alerta al usuario y blanquea los input
  * @method Comprobar
  * @return ok
  */
@@ -206,7 +206,13 @@ function Comprobar(){
         document.getElementById("Urea").value = "";
         document.getElementById("VolUrinario").value = "";
         ok = 0;
-    } else if (ProtConsumidas != 0 && Urea != 0 && VolUrinario != 0) {
+    } else if (ProtConsumidas == 0 || Urea == 0 || VolUrinario == 0) {
+        alert("Los valores a completar no iguales a 0");
+        document.getElementById("ProtConsumidas").value = "";
+        document.getElementById("Urea").value = "";
+        document.getElementById("VolUrinario").value = "";
+        ok = 0;
+    } else if (ProtConsumidas > 0 && Urea > 0 && VolUrinario > 0){
         ok = 1;
     }
     return ok;
