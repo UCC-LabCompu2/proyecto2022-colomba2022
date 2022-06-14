@@ -200,19 +200,13 @@ function Comprobar(){
     var VolUrinario = document.getElementById("VolUrinario").value;
     var ok;
 
-    if (ProtConsumidas < 0 || Urea < 0 || VolUrinario < 0) {
-        alert("Los valores a completar no pueden ser negativos");
+    if (ProtConsumidas <= 0 || Urea <= 0 || VolUrinario <= 0) {
+        alert("Los valores a completar no pueden ser negativos ni nulos");
         document.getElementById("ProtConsumidas").value = "";
         document.getElementById("Urea").value = "";
         document.getElementById("VolUrinario").value = "";
         ok = 0;
-    } else if (ProtConsumidas == 0 || Urea == 0 || VolUrinario == 0) {
-        alert("Los valores a completar no iguales a 0");
-        document.getElementById("ProtConsumidas").value = "";
-        document.getElementById("Urea").value = "";
-        document.getElementById("VolUrinario").value = "";
-        ok = 0;
-    } else if (ProtConsumidas > 0 && Urea > 0 && VolUrinario > 0){
+    } else if (ProtConsumidas != 0 && Urea != 0 && VolUrinario != 0) {
         ok = 1;
     }
     return ok;
