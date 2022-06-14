@@ -159,6 +159,9 @@ function Canvas(Ingr, Egr) {
     var margen = 10;
     var IngrGramos, EgrGramos;
     var IngrRelativo, EgrRelativo;
+    
+    /* Limpia el canvas */
+    ctx.clearRect(0, 0, 600, 520);
 
     /* Comprueba que los valores esten si o si on "Gramos", sino, los transforma */
     if ((document.getElementById("UnidadUrea").value == "Miligramos/Decilitros") && (document.getElementById("UnidadVol").value == "Decilitros") && (document.getElementById("UnidadPeso").value == "Miligramos")) {
